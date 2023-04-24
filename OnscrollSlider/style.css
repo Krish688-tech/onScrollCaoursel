@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+
+* {
+    box-sizing: border-box;
+  }
+  
+:root{
+  --index: calc(1vw + 1vh);
+}
+
+body {
+  background-color: #111;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  overscroll-behavior: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  overflow-x: hidden;
+  font-size: calc(var(--index) * 1);
+}
+
+section {
+  min-height: 100vh;
+}
+
+p {
+  line-height: 1.35;
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh;
+}
+
+#content {
+  overflow: visible;
+  width: 100%;
+}
+
+h1 {
+  font-size: clamp(12px, 8vw, 100px);
+  text-align: center;
+  line-height: 0.67;
+  margin: 0 auto;
+  font-family: "Open sans";
+}
+
+.content {
+  border-left: solid 1px white;
+  padding: 0.5rem 2rem;
+}
+
+  .gallery-wrapper {
+    height: 80vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .gallery {
+    position: relative;
+    z-index: 1;
+    height: 50vh;
+    white-space: nowrap;
+    display: block;
+  }
+  
+  .gallery-box {
+    height: 50vh;
+    width: 50vh;
+    margin: 0 5px;
+    display: inline-block;
+  }
+  .gallery-box img {
+    object-fit: cover;
+    height: 150%;
+    width: 100%;
+  }
+  
+  .staggered {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+  }
+  .staggered h3 {
+    font-family: "Open sans";
+    font-size: clamp(16px, 6vw, 80px);
+    letter-spacing: 0.03em;
+  }
+  .staggered_text {
+    flex: 1 1 300px;
+  }
+  .staggered_demo {
+    flex: 1 1 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
